@@ -27,3 +27,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+      - uses: actions/upload-artifact@main
+        with:
+          name: remark-lint-report
+          path: public/
